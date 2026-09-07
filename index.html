@@ -48,6 +48,7 @@ body{
     white-space:nowrap;
 }
 
+
 /* ================= HEADER ================= */
 
 header{
@@ -62,7 +63,8 @@ header{
     z-index:1000;
 }
 
-/* Hamburger */
+
+/* ================= MENU BUTTON ================= */
 
 .menu-btn{
     width:52px;
@@ -71,11 +73,13 @@ header{
     border-radius:15px;
     background:rgba(255,255,255,.25);
     backdrop-filter:blur(12px);
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:6px;
+
     cursor:pointer;
     transition:.3s;
 }
@@ -96,19 +100,26 @@ header{
     background:#fff;
 }
 
+
 /* ================= SIDE MENU ================= */
 
 .menu{
     position:fixed;
     top:0;
     left:-330px;
+
     width:310px;
     height:100vh;
-    background:rgba(20,20,20,.96);
+
+    background:rgba(20,20,20,.97);
     backdrop-filter:blur(20px);
+
     z-index:2000;
+
     padding:35px 25px;
+
     transition:.45s cubic-bezier(.77,0,.18,1);
+
     box-shadow:15px 0 40px rgba(0,0,0,.2);
 }
 
@@ -120,6 +131,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     margin-bottom:55px;
 }
 
@@ -138,13 +150,18 @@ header{
 
 .menu a{
     display:block;
+
     color:#fff;
     text-decoration:none;
+
     font-size:14px;
     font-weight:600;
     letter-spacing:1px;
+
     padding:18px 5px;
+
     border-bottom:1px solid rgba(255,255,255,.12);
+
     transition:.25s;
 }
 
@@ -156,11 +173,15 @@ header{
 .menu-overlay{
     position:fixed;
     inset:0;
+
     background:rgba(0,0,0,.35);
     backdrop-filter:blur(3px);
+
     z-index:1500;
+
     opacity:0;
     visibility:hidden;
+
     transition:.3s;
 }
 
@@ -169,15 +190,20 @@ header{
     visibility:visible;
 }
 
-/* ================= HOME ================= */
+
+/* ================= HERO ================= */
 
 .hero{
     min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     padding:100px 25px 60px;
+
     position:relative;
 }
 
@@ -188,36 +214,55 @@ header{
 
 .small-tag{
     display:inline-block;
+
     border:1px solid rgba(0,0,0,.35);
+
     border-radius:100px;
+
     padding:9px 17px;
+
     font-size:10px;
     letter-spacing:2px;
+
     margin-bottom:25px;
+
     background:rgba(255,255,255,.25);
 }
 
 .logo{
     font-size:clamp(70px,18vw,170px);
+
     line-height:.9;
+
     font-weight:900;
+
     letter-spacing:-7px;
+
     transform:skew(-7deg);
-    text-shadow:7px 7px 0 rgba(0,0,0,.08);
+
+    text-shadow:
+        7px 7px 0 rgba(0,0,0,.08);
 }
 
 .hero h1{
     margin-top:30px;
+
     font-size:clamp(20px,4vw,38px);
+
     line-height:1.25;
 }
 
 .hero p{
     max-width:650px;
+
     margin:20px auto 0;
+
     font-family:Arial,sans-serif;
+
     font-size:15px;
+
     line-height:1.7;
+
     color:#292929;
 }
 
@@ -227,29 +272,45 @@ header{
 
 .contact-btn{
     display:inline-block;
+
     text-decoration:none;
+
     color:#fff;
+
     background:#111;
+
     padding:15px 25px;
+
     border-radius:12px;
+
     font-size:12px;
+
     font-weight:bold;
+
     letter-spacing:1px;
+
     transition:.3s;
 }
 
 .contact-btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.2);
 }
 
-/* ================= SECTIONS ================= */
+
+/* ================= ALL SECTIONS ================= */
 
 section{
     min-height:70vh;
+
     padding:100px 25px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 }
 
@@ -260,83 +321,163 @@ section{
 
 .section-label{
     font-size:10px;
+
     letter-spacing:3px;
+
     opacity:.55;
+
     margin-bottom:15px;
 }
 
 .section-title{
     font-size:clamp(35px,8vw,70px);
+
     font-weight:900;
+
     letter-spacing:-3px;
+
     margin-bottom:25px;
 }
 
 .section-text{
     font-family:Arial,sans-serif;
-    max-width:700px;
+
+    max-width:750px;
+
     font-size:16px;
+
     line-height:1.8;
 }
 
-/* ================= CARDS ================= */
+
+/* ================= ABOUT US ================= */
+
+.about-box{
+    margin-top:35px;
+
+    background:rgba(255,255,255,.32);
+
+    border:1px solid rgba(0,0,0,.12);
+
+    border-radius:25px;
+
+    padding:35px 30px;
+
+    backdrop-filter:blur(8px);
+}
+
+.about-box p{
+    font-family:Arial,sans-serif;
+
+    font-size:16px;
+
+    line-height:1.85;
+
+    color:#222;
+
+    margin-bottom:20px;
+}
+
+.about-box p:last-child{
+    margin-bottom:0;
+}
+
+.about-purpose{
+    margin-top:30px;
+
+    padding:25px;
+
+    background:#111;
+
+    color:#fff;
+
+    border-radius:18px;
+
+    font-family:Arial,sans-serif;
+
+    line-height:1.7;
+}
+
+.about-purpose strong{
+    color:#ffe76a;
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+}
+
+
+/* ================= PRICING ================= */
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(200px,1fr));
+
     gap:15px;
+
     margin-top:40px;
 }
 
 .card{
     background:rgba(255,255,255,.3);
+
     border:1px solid rgba(0,0,0,.12);
+
     border-radius:20px;
+
     padding:28px 22px;
+
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-7px);
+
     background:rgba(255,255,255,.55);
 }
 
 .card h3{
     font-size:15px;
+
     margin-bottom:12px;
 }
 
 .card p{
     font-family:Arial,sans-serif;
+
     font-size:13px;
+
     line-height:1.6;
 }
 
-/* ================= PRICING ================= */
-
 .price{
     font-size:32px;
+
     font-weight:900;
+
     margin:15px 0;
 }
 
-.price span{
-    font-size:12px;
-    font-family:Arial,sans-serif;
-    font-weight:normal;
-}
 
 /* ================= REGISTRATION ================= */
 
 .registration-box{
     background:#111;
+
     color:#fff;
+
     border-radius:25px;
+
     padding:40px 25px;
 }
 
 .registration-box .section-label{
     color:#ffe76a;
+
     opacity:1;
 }
 
@@ -346,21 +487,32 @@ section{
 
 .registration-box p{
     font-family:Arial,sans-serif;
+
     line-height:1.7;
+
     color:#ddd;
 }
 
 .register-btn{
     display:inline-block;
+
     margin-top:25px;
+
     padding:14px 22px;
+
     background:#ffe76a;
+
     color:#111;
+
     text-decoration:none;
+
     border-radius:10px;
+
     font-size:11px;
+
     font-weight:bold;
 }
+
 
 /* ================= CONTACT ================= */
 
@@ -370,64 +522,92 @@ section{
 
 .contact-info{
     margin-top:30px;
+
     display:flex;
+
     flex-direction:column;
+
     gap:15px;
 }
 
 .contact-item{
     background:rgba(255,255,255,.3);
+
     border:1px solid rgba(0,0,0,.1);
+
     padding:20px;
+
     border-radius:15px;
 }
 
 .contact-item strong{
     display:block;
+
     font-size:11px;
+
     letter-spacing:1px;
+
     margin-bottom:8px;
 }
 
 .contact-item a{
     color:#111;
+
     text-decoration:none;
+
     font-family:Arial,sans-serif;
+
     font-size:15px;
 }
+
 
 /* ================= FOOTER ================= */
 
 footer{
     text-align:center;
+
     padding:35px 20px;
-    border-top:1px solid rgba(0,0,0,.1);
+
+    border-top:
+        1px solid rgba(0,0,0,.1);
 }
 
 footer h2{
     font-size:25px;
+
     letter-spacing:2px;
 }
 
 footer p{
     margin-top:10px;
+
     font-family:Arial,sans-serif;
+
     font-size:11px;
+
     opacity:.6;
 }
+
 
 /* ================= ANIMATION ================= */
 
 @keyframes fadeUp{
+
     from{
         opacity:0;
-        transform:translateY(30px);
+
+        transform:
+            translateY(30px);
     }
+
     to{
         opacity:1;
-        transform:translateY(0);
+
+        transform:
+            translateY(0);
     }
 }
+
 
 /* ================= MOBILE ================= */
 
@@ -443,6 +623,7 @@ footer p{
 
     .logo{
         font-size:78px;
+
         letter-spacing:-5px;
     }
 
@@ -466,15 +647,26 @@ footer p{
     .section-title{
         font-size:42px;
     }
+
+    .about-box{
+        padding:25px 20px;
+    }
+
+    .about-box p{
+        font-size:15px;
+    }
 }
 </style>
 </head>
 
+
 <body>
 
-<!-- BACKGROUND -->
+
+<!-- ================= BACKGROUND ================= -->
 
 <div class="bg-text">
+
     <span>ASTRA</span>
     <span>ASTRA</span>
     <span>ASTRA</span>
@@ -483,212 +675,384 @@ footer p{
     <span>ASTRA</span>
     <span>ASTRA</span>
     <span>ASTRA</span>
+
 </div>
 
 
-<!-- MENU -->
+<!-- ================= HEADER ================= -->
 
 <header>
-    <button class="menu-btn" onclick="openMenu()">
+
+    <button
+        class="menu-btn"
+        onclick="openMenu()">
+
         <span></span>
         <span></span>
         <span></span>
+
     </button>
+
 </header>
 
-<div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
 
-<nav class="menu" id="menu">
+<!-- ================= MENU ================= -->
+
+<div
+    class="menu-overlay"
+    id="overlay"
+    onclick="closeMenu()">
+</div>
+
+
+<nav
+    class="menu"
+    id="menu">
 
     <div class="menu-header">
-        <div class="menu-logo">ASTRA</div>
-        <div class="close" onclick="closeMenu()">×</div>
+
+        <div class="menu-logo">
+            ASTRA
+        </div>
+
+        <div
+            class="close"
+            onclick="closeMenu()">
+
+            ×
+
+        </div>
+
     </div>
 
-    <a href="#about" onclick="closeMenu()">01 — ABOUT US</a>
-    <a href="#influencers" onclick="closeMenu()">02 — INFLUENCER LIST</a>
-    <a href="#contact" onclick="closeMenu()">03 — CONTACT US</a>
-    <a href="#pricing" onclick="closeMenu()">04 — CAMPAIGN PRICING</a>
-    <a href="#registration" onclick="closeMenu()">05 — REGISTRATION</a>
+
+    <!-- ABOUT US -->
+
+    <a
+        href="#about"
+        onclick="closeMenu()">
+
+        01 — ABOUT US
+
+    </a>
+
+
+    <!-- CONTACT -->
+
+    <a
+        href="#contact"
+        onclick="closeMenu()">
+
+        02 — CONTACT US
+
+    </a>
+
+
+    <!-- PRICING -->
+
+    <a
+        href="#pricing"
+        onclick="closeMenu()">
+
+        03 — CAMPAIGN PRICING
+
+    </a>
+
+
+    <!-- REGISTRATION -->
+
+    <a
+        href="#registration"
+        onclick="closeMenu()">
+
+        04 — REGISTRATION
+
+    </a>
 
 </nav>
 
 
-<!-- HOME -->
+<!-- ================= MAIN ================= -->
 
 <main>
 
-<section class="hero" id="home">
+
+<!-- ================= HOME ================= -->
+
+<section
+    class="hero"
+    id="home">
 
     <div class="hero-content">
 
+
         <div class="small-tag">
+
             INFLUENCER MARKETING AGENCY
+
         </div>
+
 
         <div class="logo">
+
             ASTRA
+
         </div>
 
+
         <h1>
+
             Welcome to ASTRA
+
         </h1>
 
+
         <p>
+
             Read our Terms & Services before collaborating
             or working with us. We believe in transparent,
             professional and effective influencer marketing.
+
         </p>
+
 
         <div class="hero-buttons">
-            <a href="#contact" class="contact-btn">
+
+            <a
+                href="#contact"
+                class="contact-btn">
+
                 CONTACT US
+
             </a>
+
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- ABOUT -->
 
-<section id="about">
+<!-- ================= ABOUT US ================= -->
+
+<section
+    id="about">
 
     <div class="section-inner">
 
-        <div class="section-label">01 / ABOUT US</div>
+
+        <div class="section-label">
+
+            01 / ABOUT US
+
+        </div>
+
 
         <div class="section-title">
+
             WE CONNECT<br>
             BRANDS × CREATORS
+
         </div>
 
-        <p class="section-text">
-            ASTRA is an influencer marketing agency focused on
-            connecting brands with suitable creators. We help
-            coordinate campaigns, creator selection and
-            promotional collaborations according to campaign
-            requirements.
-        </p>
+
+        <div class="about-box">
+
+
+            <p>
+
+                ASTRA is an influencer marketing agency built
+                with a simple purpose — to reduce the gap between
+                brands and influencers and make collaborations
+                easier, more accessible and more effective.
+
+            </p>
+
+
+            <p>
+
+                We understand that finding the right influencer
+                for a campaign can be difficult for brands, while
+                creators often face challenges in finding genuine
+                and relevant brand collaboration opportunities.
+                ASTRA works as the connection between both sides,
+                helping bring the right brands and creators together.
+
+            </p>
+
+
+            <p>
+
+                Our approach focuses on understanding a brand's
+                requirements, target audience, campaign goals and
+                budget before suggesting suitable collaboration
+                opportunities. We aim to make influencer marketing
+                simpler for businesses of different sizes, including
+                startups and growing brands.
+
+            </p>
+
+
+            <p>
+
+                From creator selection and campaign planning to
+                communication and coordination, ASTRA works to make
+                the collaboration process smooth and organized.
+                We believe successful influencer marketing is not
+                only about follower count, but also about finding
+                the right audience and the right creator for a brand.
+
+            </p>
+
+
+            <p>
+
+                Our goal is to build a professional ecosystem where
+                brands can discover creators with confidence and
+                influencers can access meaningful opportunities.
+                With transparent communication and flexible campaign
+                options, ASTRA aims to make influencer marketing
+                straightforward for everyone involved.
+
+            </p>
+
+
+            <div class="about-purpose">
+
+                <strong>
+                    OUR PURPOSE
+                </strong>
+
+                <br><br>
+
+                Connecting the right brands with the right creators,
+                while making the collaboration process simple,
+                transparent and efficient.
+
+            </div>
+
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- INFLUENCERS -->
 
-<section id="influencers">
+<!-- ================= PRICING ================= -->
 
-    <div class="section-inner">
-
-        <div class="section-label">02 / INFLUENCER LIST</div>
-
-        <div class="section-title">
-            CREATOR<br>
-            NETWORK
-        </div>
-
-        <p class="section-text">
-            Our creator network covers multiple categories and
-            audience types. Influencers are selected according
-            to campaign requirements, niche, reach and
-            engagement.
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>FASHION</h3>
-                <p>Creators focused on fashion, clothing and lifestyle.</p>
-            </div>
-
-            <div class="card">
-                <h3>BEAUTY</h3>
-                <p>Beauty and lifestyle creators for relevant campaigns.</p>
-            </div>
-
-            <div class="card">
-                <h3>LIFESTYLE</h3>
-                <p>Creators covering everyday lifestyle and trends.</p>
-            </div>
-
-            <div class="card">
-                <h3>GAMING</h3>
-                <p>Gaming creators and gaming-focused audiences.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PRICING -->
-
-<section id="pricing">
+<section
+    id="pricing">
 
     <div class="section-inner">
 
-        <div class="section-label">04 / CAMPAIGN PRICING</div>
+
+        <div class="section-label">
+
+            03 / CAMPAIGN PRICING
+
+        </div>
+
 
         <div class="section-title">
+
             SIMPLE.<br>
             FLEXIBLE.
+
         </div>
 
+
         <p class="section-text">
+
             Choose a campaign according to your requirements
-            and budget. Our campaigns can be customized based
-            on creator selection and deliverables.
+            and budget. Campaigns can be customized according
+            to creator selection and deliverables.
+
         </p>
+
 
         <div class="cards">
 
+
             <div class="card">
-                <h3>STARTER CAMPAIGN</h3>
+
+                <h3>
+                    STARTER CAMPAIGN
+                </h3>
+
 
                 <div class="price">
+
                     ₹1,499
-                    <span>starting</span>
+
                 </div>
 
+
                 <p>
+
                     1 Instagram Story<br>
                     Free script writing<br>
                     Suitable for small businesses
+
                 </p>
+
             </div>
 
+
+
             <div class="card">
-                <h3>CUSTOM CAMPAIGN</h3>
+
+                <h3>
+                    CUSTOM CAMPAIGN
+                </h3>
+
 
                 <div class="price">
+
                     CUSTOM
+
                 </div>
 
+
                 <p>
+
                     Creator selection, deliverables
                     and campaign requirements can
                     be discussed according to your brand.
+
                 </p>
+
             </div>
 
+
+
             <div class="card">
-                <h3>MONTHLY PLANS</h3>
+
+                <h3>
+                    MONTHLY PLANS
+                </h3>
+
 
                 <div class="price">
+
                     CUSTOM
+
                 </div>
 
+
                 <p>
+
                     Flexible monthly campaigns for
                     businesses looking for consistent
                     influencer marketing.
+
                 </p>
+
             </div>
+
 
         </div>
 
@@ -697,34 +1061,50 @@ footer p{
 </section>
 
 
-<!-- REGISTRATION -->
 
-<section id="registration">
+<!-- ================= REGISTRATION ================= -->
+
+<section
+    id="registration">
 
     <div class="section-inner">
 
+
         <div class="registration-box">
 
+
             <div class="section-label">
-                05 / REGISTRATION
+
+                04 / REGISTRATION
+
             </div>
+
 
             <div class="section-title">
+
                 WORK WITH<br>
                 ASTRA
+
             </div>
 
+
             <p>
+
                 Interested in collaborating with ASTRA?
                 Register your interest and our team can
                 discuss the next steps with you.
+
             </p>
+
 
             <a
                 href="mailto:astraofficialmarketing@gmail.com?subject=ASTRA Registration"
                 class="register-btn">
+
                 REGISTER YOUR INTEREST
+
             </a>
+
 
         </div>
 
@@ -733,91 +1113,154 @@ footer p{
 </section>
 
 
-<!-- CONTACT -->
 
-<section class="contact" id="contact">
+<!-- ================= CONTACT ================= -->
+
+<section
+    class="contact"
+    id="contact">
 
     <div class="section-inner">
 
-        <div class="section-label">03 / CONTACT US</div>
 
-        <div class="section-title">
-            LET'S<br>
-            CONNECT.
+        <div class="section-label">
+
+            02 / CONTACT US
+
         </div>
 
+
+        <div class="section-title">
+
+            LET'S<br>
+            CONNECT.
+
+        </div>
+
+
         <p class="section-text">
+
             For brand collaborations, influencer campaigns
             and other business enquiries, contact ASTRA.
+
         </p>
+
 
         <div class="contact-info">
 
+
             <div class="contact-item">
 
-                <strong>EMAIL</strong>
+                <strong>
+                    EMAIL
+                </strong>
 
-                <a href="mailto:astraofficialmarketing@gmail.com">
+
+                <a
+                    href="mailto:astraofficialmarketing@gmail.com">
+
                     astraofficialmarketing@gmail.com
+
                 </a>
 
             </div>
+
+
 
             <div class="contact-item">
 
-                <strong>WHATSAPP — ONLY</strong>
+                <strong>
+                    WHATSAPP — ONLY
+                </strong>
 
-                <a href="https://wa.me/917668572679">
+
+                <a
+                    href="https://wa.me/917668572679">
+
                     +91 7668572679
+
                 </a>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <h2>ASTRA</h2>
+    <h2>
+        ASTRA
+    </h2>
+
 
     <p>
+
         Influencer Marketing & Brand Collaborations
+
     </p>
 
+
     <p>
+
         © 2026 ASTRA. All rights reserved.
+
     </p>
 
 </footer>
 
 
+
+<!-- ================= JAVASCRIPT ================= -->
+
 <script>
 
 function openMenu(){
 
-    document.getElementById("menu").classList.add("active");
+    document
+        .getElementById("menu")
+        .classList
+        .add("active");
 
-    document.getElementById("overlay").classList.add("active");
+
+    document
+        .getElementById("overlay")
+        .classList
+        .add("active");
 
 }
 
+
 function closeMenu(){
 
-    document.getElementById("menu").classList.remove("active");
+    document
+        .getElementById("menu")
+        .classList
+        .remove("active");
 
-    document.getElementById("overlay").classList.remove("active");
+
+    document
+        .getElementById("overlay")
+        .classList
+        .remove("active");
 
 }
 
 </script>
 
+
 </body>
-  </html>
+</html>
+
+             
+            
